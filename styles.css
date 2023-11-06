@@ -1,0 +1,75 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding-top: 50px; /* Give some space on the top for the fixed nav */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+nav ul {
+    background-color: #333;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 0 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        margin: 5px 0;
+    }
+}
